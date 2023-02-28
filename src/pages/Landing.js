@@ -59,10 +59,10 @@ function Landing() {
                 className="dislike"
                 onClick={() => handleDislike(item.id)}
               >
-                <NotInterestedIcon />
+                <NotInterestedIcon className="Landing_icon" />
               </button>
               <button className="like" onClick={() => handleLike(item.id)}>
-                <FavoriteIcon />
+                <FavoriteIcon className="Landing_icon" />
               </button>
             </div>
           </div>

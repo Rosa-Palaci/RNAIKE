@@ -41,6 +41,12 @@
   padding: 10px;
 }
 
+.card-action .Landing_icon {
+  font-size: large;
+  width: 70px;
+  height: 86px;
+}
+
 .card-action button {
   background-color: #ff4136; /* rojo */
   color: #fff;
