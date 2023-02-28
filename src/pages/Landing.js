@@ -1,6 +1,7 @@
 // libraries
 import React, { useState } from "react";
-
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import NotInterestedIcon from "@material-ui/icons/NotInterested";
 // components.
 import Header from "../components/Header";
 import "../components/Landing.css";
@@ -58,10 +59,10 @@ function Landing() {
                 className="dislike"
                 onClick={() => handleDislike(item.id)}
               >
-                DisLike
+                <NotInterestedIcon />
               </button>
               <button className="like" onClick={() => handleLike(item.id)}>
-                Like
+                <FavoriteIcon />
               </button>
             </div>
           </div>
