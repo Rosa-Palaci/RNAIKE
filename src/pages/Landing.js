@@ -1,7 +1,5 @@
 // libraries
 import React, { useState } from "react";
-import TinderCard from "react-tinder-card";
-import { FaHeart, FaRegTimesCircle } from "react-icons/fa";
 
 // components.
 import Header from "../components/Header";
