@@ -13,9 +13,9 @@ function Landing() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentCard = cardsState[currentIndex];
 
-  const handleLike = (cardId) => {
-    const updatedCards = cardsState.map((card) => {
-      if (card.id === cardId) {
+  const handleLike = () => {
+    const updatedCards = cardsState.map((card, index) => {
+      if (index === currentIndex) {
         return {
           ...card,
           liked: true,
@@ -24,11 +24,12 @@ function Landing() {
       return card;
     });
     setCardsState(updatedCards);
+    setCurrentIndex(currentIndex + 1);
   };
 
-  const handleDislike = (cardId) => {
-    const updatedCards = cardsState.map((card) => {
-      if (card.id === cardId) {
+  const handleDislike = () => {
+    const updatedCards = cardsState.map((card, index) => {
+      if (index === currentIndex) {
         return {
           ...card,
           disliked: true,
@@ -37,6 +38,7 @@ function Landing() {
       return card;
     });
     setCardsState(updatedCards);
+    setCurrentIndex(currentIndex + 1);
   };
 
   return (
