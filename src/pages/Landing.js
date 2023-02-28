@@ -10,6 +10,9 @@ import { cards } from "../assets/cards";
 
 function Landing() {
   const [cardsState, setCardsState] = useState(cards);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const currentCard = cardsState[currentIndex];
+
   const handleLike = (cardId) => {
     const updatedCards = cardsState.map((card) => {
       if (card.id === cardId) {
