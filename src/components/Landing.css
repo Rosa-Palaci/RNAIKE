@@ -40,3 +40,27 @@
   justify-content: space-between;
   padding: 10px;
 }
+
+.card-action button {
+  background-color: #ff4136; /* rojo */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+}
+
+.card-action button:hover {
+  background-color: #2ecc40; /* verde */
+}
+.card-action button.like {
+  background-color: #2ecc40; /* verde */
+}
+
+.card-action button.dislike {
+  background-color: #ff4136; /* rojo */
+}

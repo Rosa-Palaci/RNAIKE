@@ -49,8 +49,15 @@ function Landing() {
             style={{ backgroundImage: `url(${item.image})` }}
           >
             <div className="card-action">
-              <button onClick={() => handleDislike(item.id)}>DisLike</button>
-              <button onClick={() => handleLike(item.id)}>Like</button>
+              <button
+                className="dislike"
+                onClick={() => handleDislike(item.id)}
+              >
+                DisLike
+              </button>
+              <button className="like" onClick={() => handleLike(item.id)}>
+                Like
+              </button>
             </div>
           </div>
         ))}
