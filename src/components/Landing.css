@@ -1,0 +1,32 @@
+.card-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:not(:first-child) {
+  transform: translateX(100%);
+}
+
+.card.like {
+  transform: translateX(-100%);
+}
+
+.card.dislike {
+  transform: translateX(200%);
+}
+
+.card.hide {
+  display: none;
+}
