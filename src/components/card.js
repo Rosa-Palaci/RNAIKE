@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor({ imageUrl, onDismiss, onLike, onDislike }) {
     this.imageUrl = imageUrl;
     this.onDismiss = onDismiss;
